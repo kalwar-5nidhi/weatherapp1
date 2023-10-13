@@ -1,0 +1,150 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color for the entire page */
+body {
+    background-color: #9681EB;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header-wrapper {
+    background-image: linear-gradient(#9681EB, #45CFDD, #A7EDE7);
+    padding: 10px;
+    padding-left: 540px;
+    display: flex; /* Use flex to align items horizontally */
+    align-items: center;
+    height: 80px;
+}
+
+.header-wrapper .icon {
+    margin-right: 10px;
+    flex: 0 0 auto; /* Prevent the image from growing */
+}
+
+.header-wrapper .para {
+    color: black;
+    font-size: 28px;
+    align-items: center;
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+/* Add a class for the cloudy image */
+.cloudy-image {
+    max-width: 50px;
+}
+
+/* Box container styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(#A7EDE7, #45CFDD, #9681EB);
+}
+
+/* Box styles */
+.boxes {
+    width: 350px;
+    margin: 20px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 2rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* Day header styles */
+.day {
+    text-align: center;
+}
+
+.city {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.date1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Weather icon styles */
+.weather-icon1 {
+    display: block;
+    margin: 0 auto;
+    max-width: 50px;
+}
+
+/* Main data styles */
+.main-data {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.temp1 {
+    font-size: 1.5rem;
+    color: #45CFDD; /* Set temperature text color */
+}
+
+.desc1 {
+    font-size: 1rem; /* Adjusted font size for description */
+    color: #A7EDE7; /* Set description text color */
+}
+
+/* Data icons and values styles */
+/* Data icons and values styles */
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.icondata1,
+.icondata2,
+.icondata3 {
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* Adjusted font size for data icons */
+    color: red; /* Set the color to red */
+}
+
+.icondata1 i,
+.icondata2 i,
+.icondata3 i {
+    margin-right: 5px;
+    font-size: 1.2rem; /* Adjusted font size for data icons */
+    color: red; /* Set the color to red */
+}
+
+.pressure1,
+.humidity1,
+.wind1 {
+    font-size: 0.8rem;
+    color: #A7EDE7; /* Set data value text color */
+}
+
+/* Back button styles */
+.button {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #9681EB;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 100px;
+}
+
+.btn a:hover {
+    background-color: grey;
+}

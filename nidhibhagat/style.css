@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.icons-image {
+    color: blue;
+}
+
+.icon{
+    padding-right: 10px;
+    
+
+}
+header {
+    height: 100px;
+  background-image: linear-gradient( #9681EB,#45CFDD, #A7EDE7);
+    padding: 10px;
+    padding-left: 30px;
+    
+}
+
+div.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align contents to the right */
+  padding-right: 10%; /* Adjust padding on the right */
+  margin-top: 2%;
+}
+.para{
+     margin-right: 550px;
+     font-size: 30px;
+     font-weight: 500;     
+}
+
+.search-container input {
+  width: 200px; /* Adjust the width of the input field */
+  padding: 10px; /* Add padding to the input field */
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  background-color: #000;
+}
+
+.search-container button {
+
+  border: whitesmoke;
+  outline: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #e0e0e0;
+}
+
+.search-container button:focus {
+  background-color: #d0d0d0;
+}
+
+.search-container button:active {
+  transform: scale(0.95);
+}
+
+
+button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #646262;
+  }
+  
+  button:focus {
+    background-color: #a19c9c;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+
+button img {
+    width: 16px;
+    align-items: center;
+}
+
+#data-section {
+    padding: 80px;
+    background-image: linear-gradient( #A7EDE7, #45CFDD,#9681EB, #6527BE);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.temp {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin: 3% 0%;
+    width: 100%;
+    height: 150px;
+    border-radius: 35px;
+    padding-top: 30px;
+}
+
+.city-weather {
+    display: flex;
+    align-items: center;
+    
+}
+
+.weather-icon {
+    flex: 0 0 170px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.icons-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.city-weather .city-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.city-weather .city-name {
+    margin: 0;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.city-weather .city-condition {
+    margin: 0;
+    font-size: 16px;
+}
+
+.main-text {
+    color: #f1f1f1;
+    padding-top: 20px;
+}
+
+.degree-celcius {
+    font-size: 35px;
+    margin-left: 20%;
+    padding-top: 20px;
+    color: white;
+}
+
+.city-name {
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.city-condition {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text {
+    text-align: center;
+    margin: 5%;
+    font-size: larger;
+    
+}
+.details{
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    padding: 2rem 0;
+}
+.details .child {
+    display: grid;
+     grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.Message{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(red);
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    padding: 2rem 0;
+    margin: 30px;
+
+}
+
+.date,
+.pressure,
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.date,
+.pressure {
+    grid-row: 1;
+}
+
+.humidity,
+.wind {
+    grid-row: 2;
+}
+
+.date:hover,
+.pressure:hover,
+.humidity:hover,
+.wind:hover {
+    background-image:  linear-gradient(#9681EB, #6527BE);;
+}
+
+.date i,
+.pressure i,
+.humidity i,
+.wind i {
+    margin-right: 10px;
+}
+
+/* Style for the button */
+button {
+    /* Set width and height for the button */
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+  
+    /* Add some padding to make it look more appealing */
+    padding: 10px;
+  
+    /* Add background color and border */
+    background-color: #000;
+    border-radius: 5px;
+  
+    /* Add text styles */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  
+    /* Remove default button styles */
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    background-color: rgb(80, 78, 78)
+  }
+
+
+    /* Media Queries to make responsive*/
+@media (max-width: 1212px) {
+    div.search-container {
+        justify-content: center;
+    }
+
+    input.input-field {
+        padding: 3px 3px 0px 10px;
+    }
+
+    button {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 990px) {
+    div.search-container {
+        display: flex;
+        padding-left: 10%;
+        margin-top:2%;
+        
+    }    
+}
+
+@media (max-width: 772px) {
+    .weather-icon {
+        padding-left: 20px;
+        flex: 0 0 100px;
+        height: 70px;
+        display: flex;
+    }
+
+    .degree-celcius {
+        font-size: 30px;
+        margin-left: 10%;
+    }
+
+    .city-weather .city-name {
+        font-size: 20px;   
+    }
+}
+
+@media (max-width: 562px) {
+    .weather-icon{
+        padding-left: 5px;
+        flex: 0 0 60px;
+        height: 50px;
+        margin-bottom: 40px;
+        
+    }
+
+    .city-weather .city-name {
+        font-size: 15px;
+        
+    }
+    
+    .city-weather .city-condition {
+        margin: 0;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .degree-celcius {
+        font-size: 27px;
+        
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        padding: 20px;
+    }
+}

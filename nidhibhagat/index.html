@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <div class="icon">
+                <img src="images/clouds.png" width="50px">
+            </div>
+            <div class="para">
+                <p><span>Weather Forcasting from API</span></p>
+            </div>
+            <form id="weather-form" action="connection.php" method="post">
+                <input type="text" class="input-field" placeholder="Search your city..." required="">
+                <button type="button" onclick="document.getElementById('myForm').submit();">
+                    <i class="fa fa-search"></i>
+                </button>
+                
+            </form>
+        </div>
+         
+    </header>
+
+    <section id="data-section">
+        <div class="container">
+            <div class="temp">
+                <div class="city-weather">
+                    <div class="weather-icon"><img class="icons-image" alt=""></div>
+                    <div class="main-text">
+                        <h2 class="city-name"></h2>
+                        <p class="city-condition"></p>
+                    </div>
+                </div>
+                <div class="degree-celcius">
+                    <h1 class="main-temp"></h1>
+                </div>
+            </div>
+
+            <div class="text">
+                <p >
+                     <b>Today's Highlights is given below:</b>
+                </p>
+            </div>
+            
+            <div class="details" id = "Details-deepth">
+                <div class="child" id="child_div">
+                <h3 class="date-text"><i class="far fa-calendar-alt"></i>  Date :</h3>
+                <p class="date-value"></p>
+                <h3><i class="fas fa-tachometer-alt"></i>  Pressure :</h3>
+                <p class="pressure-value"></p>
+                <h3><i class="fas fa-tint"></i>  Humidity :</h3>
+                <p class="humidity-value"></p>
+                <h3><i class="fas fa-wind"></i> Windspeed :</h3>
+                <p class="wind-value"></p>
+            </div>  
+        </div>
+        <div class=" Message">
+        <b><p class="advice-message"></p></b>
+        </div>           
+        </div>
+        <div>
+            <a href="7days.php">
+              <button type="button">Past Data</button>
+            </a>
+
+            <button id="clearLocalStorageBtn">Clear Storage</button>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
